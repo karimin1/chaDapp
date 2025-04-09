@@ -50,7 +50,12 @@ export const fetchContract=(signerOrProvider)=>{
                 console.log('Provider is:', provider);
         
                 const signer = provider.getSigner();
-                console.log('Signer is:', signer);
+                const address = await signer.getAddress();
+                if (!address) {
+                    console.log('No address found');
+                } else {
+                    console.log('Address:', address);
+                }
         
                 const network = await provider.getNetwork();
                 console.log('Connected to network:', network);

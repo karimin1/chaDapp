@@ -11,7 +11,7 @@ const Card=({el,i,readMessage,readUser})=> {
     return (
          <Link href={{pathname:'/',query:{name:`${el.name}`,address:`${el.pubkey}`}}}>
          {console.log('elpubkey',el.pubkey)}
-            <div className={Style.Card} onClick={()=>(readUser(el.pubkey))}>
+            <div className={Style.Card} onClick={()=>(readMessage(el.pubkey),readUser(el.pubkey))}>
              <div className={Style.Card_box}>
              <div className={Style.Card_box_left}>
               <Image src={images.accountName}

@@ -53,6 +53,12 @@ gap:2rem;
 .Mobile_menu{
     display: none;
 }
+.ModelBox{
+position:fixed;
+inset:0 0 0 ;
+background-color: #292F3F;
+z-index: 77777777;
+}
 @media only screen and (max-width:35rem){
      .NavBar{
         width:90%;
@@ -100,6 +106,10 @@ gap:2rem;
     }
     .Mobile_menu_items{
         margin-top: 1rem;
+    }
+    .ModelBox{
+        position: absolute;
+        inset:0 0 -70% 0%;
     }
  
 

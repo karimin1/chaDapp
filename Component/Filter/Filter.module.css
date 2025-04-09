@@ -28,6 +28,7 @@ width: 20rem;
 position: fixed;
 inset: 0 0 0 0;
 background-color: #292f3f;
+z-index: 2222222222222222;
 }
 .Filter_box_right button{
    background-color: rgba(0,0,0,0.25); 
@@ -48,5 +49,19 @@ background-color: #292f3f;
     .Filter_box{
         flex-direction: columne;
         gap:1rem;
+    }
+    .Filter_box_left_search input{
+        width: 100%;
+    }
+    .Filter_box_right button{
+        font-size: .5rem;
+    }
+    .Filter_model{
+        position: absolute;
+        inset :0 0 -70% 0;
+
+    }
+    .Filter_box_right button{
+        font-size: .5rem;
     }
 }
